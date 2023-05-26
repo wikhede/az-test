@@ -8,6 +8,7 @@
 # You can also reference a tag or branch, but the action may change without warning.
 
 name: Build and deploy PHP app to Azure Web App
+run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
 
 env:
   AZURE_WEBAPP_NAME: aztest-webapp   # set this to your application's name
